@@ -20,7 +20,7 @@ _craft () {
         name=$words[2]
       fi
 
-      commands=(${(f)"$(./yii help $name --color=0 | _yii2_format_command)"})
+      commands=(${(f)"$(./craft help $name --color=0 | _craft_format_command)"})
       compadd -Q -S '' -a -- commands
     esac
   fi
